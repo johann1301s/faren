@@ -22,13 +22,13 @@ leftButton.addEventListener('click', () => {
 
 
 topButton.addEventListener('touchstart', () => {
-  topButton.style.transform = 'scale(1.05)';
+  topButton.style.transform = 'scale(1.05) rotate(-90deg)';
   isTouching = true;
   a = - 0.000981;
 })
 
 topButton.addEventListener('touchend', () => {
-  topButton.style.transform = 'scale(1.0)';
+  topButton.style.transform = 'scale(1.0) rotate(-90deg)';
   isTouching = false;
   a = 0.000981;
 })
