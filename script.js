@@ -8,27 +8,20 @@ const leftButton = document.querySelector('.left');
 const frameHeight = container.offsetHeight;
 const frameWidth = container.offsetWidth;
 
-function addX(n) {
-  steinmann.style.left = parseFloat(steinmann.style.top) + n + 'px';
-}
-
-function addY(n) {
-  steinmann.style.top = parseFloat(steinmann.style.top) + n + 'px';
-}
-
 topButton.addEventListener('click', () => {
-  addY(100);
+  steinmann.style.top = parseFloat(steinmann.style.top) - 100 + 'px';
 })
 
 rightButton.addEventListener('click', () => {
-  addX(100);
+  steinmann.style.left = parseFloat(steinmann.style.left) + 100 + 'px';
 })
 
 leftButton.addEventListener('click', () => {
-  addX(-100);
+  steinmann.style.left = parseFloat(steinmann.style.left) - 100 + 'px';
 })
 
 function loop() {
+  
   
   
   requestAnimationFrame(loop);
