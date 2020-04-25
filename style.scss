@@ -44,7 +44,8 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 1s;
+  z-index: 5;
+  //transition: 1s;
 }
 
 .pointer {
