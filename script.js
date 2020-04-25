@@ -9,7 +9,7 @@ topButton.addEventListener('click', () => {
 })
 
 rightButton.addEventListener('click', () => {
-  window.alert('høyre');
+  window.alert('robin');
 })
 
 leftButton.addEventListener('click', () => {
