@@ -1,18 +1,18 @@
 const steinmann = document.querySelector('steinmann');
-const top = document.querySelector('steinmann');
-const right = document.querySelector('steinmann');
-const left = document.querySelector('steinmann');
+const topButton = document.querySelector('.top');
+const rightButton = document.querySelector('.right');
+const leftButton = document.querySelector('.left');
 
 
-top.addEventListener('click', () => {
+topButton.addEventListener('click', () => {
   window.alert('opp');
 })
 
-right.addEventListener('click', () => {
+rightButton.addEventListener('click', () => {
   window.alert('høyre');
 })
 
-left.addEventListener('click', () => {
+leftButton.addEventListener('click', () => {
   window.alert('venstre');
 })
 
