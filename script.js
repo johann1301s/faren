@@ -71,6 +71,8 @@ function loop(time) {
   lastTime = time;
   lastVel = v;
   lastPos = s;
+  lastVelX = vx;
+  lastPosX = sx;
   requestAnimationFrame(loop);
 }
 
