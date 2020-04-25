@@ -6,6 +6,7 @@ const leftButton = document.querySelector('.left');
 const frameHeight = container.offsetHeight;
 const frameWidth = container.offsetWidth;
 let a = 0.000981;
+let ax = 0;
 let isTouching = false;
 
 topButton.addEventListener('click', () => {
@@ -33,6 +34,18 @@ topButton.addEventListener('touchend', () => {
   a = 0.000981;
 })
 
+leftButton.addEventListener('touchstart', () => {
+  leftButton.style.transform = 'scale(1.05) rotate(-180deg)';
+  isTouching = true;
+  a = - 0.000981;
+})
+
+leftButton.addEventListener('touchend', () => {
+  leftButton.style.transform = 'scale(1.0) rotate(-180deg)';
+  isTouching = false;
+  a = 0.000981;
+})
+
 let lastTime = 0;
 let lastVel = -0.5;
 let lastVelX = 0.5;
@@ -41,7 +54,11 @@ let lastPos = 0;
 function loop(time) {
   const dt = time - lastTime;
   const v = lastVel + a*dt;
+  const vx = lastVelX + ax*dt;
   const s = lastPos + v*dt;
+  const sx = lastPosX + vx*dt;
+  
+  steinmann.style.left = sx + 'px';
   steinmann.style.top = s + 'px';
   
   if (!isTouching) {
