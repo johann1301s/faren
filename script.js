@@ -1,18 +1,18 @@
-const steinmann = document.querySelector('steinmann');
+const steinmann = document.querySelector('#steinmann');
 const topButton = document.querySelector('.top');
 const rightButton = document.querySelector('.right');
 const leftButton = document.querySelector('.left');
 
 
 topButton.addEventListener('click', () => {
-  window.alert('opp');
+  steinmann.style.top = parseFloat(steinmann.style.top) - 10 + 'px';
 })
 
 rightButton.addEventListener('click', () => {
-  window.alert('robin');
+  steinmann.style.left = parseFloat(steinmann.style.left) + 10 + 'px';
 })
 
 leftButton.addEventListener('click', () => {
-  window.alert('venstre');
+  steinmann.style.left = parseFloat(steinmann.style.left) - 10 + 'px';
 })
 

@@ -24,6 +24,10 @@ body {
 
 img {
   height: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 1s;
 }
 
 .pointer {
