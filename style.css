@@ -1,0 +1,6 @@
+.ground {
+  position: absolute;
+  bottom: 0;
+  height: 200px;
+  background-color: green;
+}
