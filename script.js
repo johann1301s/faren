@@ -30,19 +30,19 @@ leftButton.addEventListener('touchstart', () => {
 leftButton.addEventListener('touchend', () => {
   leftButton.style.transform = 'scale(1.0) rotate(-180deg)';
   isTouching = false;
-  a = 0.000981;
+  ax = 0;
 });
 
 rightButton.addEventListener('touchstart', () => {
   rightButton.style.transform = 'scale(1.05) rotate(-180deg)';
   isTouching = true;
-  a = - 0.000981;
+  ax = 0.000981;
 });
 
 rightButton.addEventListener('touchend', () => {
   rightButton.style.transform = 'scale(1.0) rotate(-180deg)';
   isTouching = false;
-  a = 0.000981;
+  ax = 0;
 });
 
 let lastTime = 0;
