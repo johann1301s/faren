@@ -3,4 +3,21 @@
   bottom: 0;
   height: 200px;
   background-color: green;
+  width: 100%;
+  background-image: url('grass.svg');
+  background-repeat: repeat;
+  background-size: 100px;
+}
+
+.ground > div {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  height: 180px;
+  background-color: brown;
+  width: 100%;  
+}
+
+body {
+  margin: 0;
 }
