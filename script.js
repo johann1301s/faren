@@ -35,9 +35,8 @@ function loop(time) {
   const dt = time - lastTime;
   const v = lastVel + a*dt;
   const s = lastPos + v*dt;
-  if (s < frameHeight - 200) {
-    steinmann.style.top = s + 'px';
-  } else {
+  steinmann.style.top = s + 'px';
+  if (s > frameHeight - 200) {
     a = - 0.000981;
   }
   
