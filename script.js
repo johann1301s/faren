@@ -22,17 +22,21 @@ leftButton.addEventListener('click', () => {
 
 
 topButton.addEventListener('touchstart', () => {
+  topButton.style.transform = 'scale(1.05)';
   isTouching = true;
   a = - 0.000981;
 })
 
 topButton.addEventListener('touchend', () => {
+  topButton.style.transform = 'scale(1.0)';
   isTouching = false;
   a = 0.000981;
 })
 
 let lastTime = 0;
 let lastVel = -0.5;
+let lastVelX = 0.5;
+let lastPosX = 0;
 let lastPos = 0;
 function loop(time) {
   const dt = time - lastTime;
