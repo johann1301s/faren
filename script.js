@@ -27,4 +27,4 @@ function loop() {
   requestAnimationFrame(loop);
 }
 
-requestAnimationFrame()
+requestAnimationFrame(loop);
