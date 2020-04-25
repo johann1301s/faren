@@ -24,7 +24,7 @@ topButton.addEventListener('touchend', () => {
 leftButton.addEventListener('touchstart', () => {
   leftButton.style.transform = 'scale(1.05) rotate(-180deg)';
   isTouching = true;
-  a = - 0.000981;
+  ax = - 0.000981;
 });
 
 leftButton.addEventListener('touchend', () => {
