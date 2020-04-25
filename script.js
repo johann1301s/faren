@@ -6,7 +6,7 @@ const rightButton = document.querySelector('.right');
 const leftButton = document.querySelector('.left');
 
 const frameHeight = container.offsetHeight;
-const frameHeight = container.offsetWidth;
+const frameWidth = container.offsetWidth;
 
 topButton.addEventListener('click', () => {
   steinmann.style.top = parseFloat(steinmann.style.top) - 100 + 'px';
