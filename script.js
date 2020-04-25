@@ -41,7 +41,7 @@ function loop(time) {
   steinmann.style.top = s + 'px';
   
   if (!isTouching) {
-    if (s > frameHeight - 200) {
+    if (s > frameHeight - 400) {
       a = - 0.00981*v;
     } else {
       a = 0.000981;
