@@ -5,6 +5,7 @@ const rightButton = document.querySelector('.right');
 const leftButton = document.querySelector('.left');
 const frameHeight = container.offsetHeight;
 const frameWidth = container.offsetWidth;
+let a = 0.000981;
 
 topButton.addEventListener('click', () => {
   steinmann.style.top = parseFloat(steinmann.style.top) - 100 + 'px';
@@ -18,10 +19,18 @@ leftButton.addEventListener('click', () => {
   steinmann.style.left = parseFloat(steinmann.style.left) - 100 + 'px';
 })
 
+
+topButton.addEventListener('touchstart', () => {
+  a = - 0.0009;
+})
+
+topButton.addEventListener('touchend', () => {
+  a = 0.000981;
+})
+
 let lastTime = 0;
 let lastVel = -0.5;
 let lastPos = 0;
-let a = 0.000981;
 function loop(time) {
   const dt = time - lastTime;
   const v = lastVel + a*dt;
