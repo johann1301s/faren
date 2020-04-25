@@ -9,42 +9,41 @@ let a = 0.000981;
 let ax = 0;
 let isTouching = false;
 
-topButton.addEventListener('click', () => {
-  steinmann.style.top = parseFloat(steinmann.style.top) - 100 + 'px';
-})
-
-rightButton.addEventListener('click', () => {
-  steinmann.style.left = parseFloat(steinmann.style.left) + 100 + 'px';
-})
-
-leftButton.addEventListener('click', () => {
-  steinmann.style.left = parseFloat(steinmann.style.left) - 100 + 'px';
-})
-
-
 topButton.addEventListener('touchstart', () => {
   topButton.style.transform = 'scale(1.05) rotate(-90deg)';
   isTouching = true;
   a = - 0.000981;
-})
+});
 
 topButton.addEventListener('touchend', () => {
   topButton.style.transform = 'scale(1.0) rotate(-90deg)';
   isTouching = false;
   a = 0.000981;
-})
+});
 
 leftButton.addEventListener('touchstart', () => {
   leftButton.style.transform = 'scale(1.05) rotate(-180deg)';
   isTouching = true;
   a = - 0.000981;
-})
+});
 
 leftButton.addEventListener('touchend', () => {
   leftButton.style.transform = 'scale(1.0) rotate(-180deg)';
   isTouching = false;
   a = 0.000981;
-})
+});
+
+rightButton.addEventListener('touchstart', () => {
+  rightButton.style.transform = 'scale(1.05) rotate(-180deg)';
+  isTouching = true;
+  a = - 0.000981;
+});
+
+rightButton.addEventListener('touchend', () => {
+  rightButton.style.transform = 'scale(1.0) rotate(-180deg)';
+  isTouching = false;
+  a = 0.000981;
+});
 
 let lastTime = 0;
 let lastVel = -0.5;
