@@ -34,13 +34,13 @@ leftButton.addEventListener('touchend', () => {
 });
 
 rightButton.addEventListener('touchstart', () => {
-  rightButton.style.transform = 'scale(1.05) rotate(-180deg)';
+  rightButton.style.transform = 'scale(1.05)';
   isTouching = true;
   ax = 0.000981;
 });
 
 rightButton.addEventListener('touchend', () => {
-  rightButton.style.transform = 'scale(1.0) rotate(-180deg)';
+  rightButton.style.transform = 'scale(1.0)';
   isTouching = false;
   ax = 0;
 });
