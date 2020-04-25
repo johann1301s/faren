@@ -47,7 +47,7 @@ rightButton.addEventListener('touchend', () => {
 
 let lastTime = 0;
 let lastVel = -0.5;
-let lastVelX = 0.5;
+let lastVelX = 0;
 let lastPosX = 0;
 let lastPos = 0;
 function loop(time) {
