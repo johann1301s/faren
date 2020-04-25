@@ -60,6 +60,7 @@ img {
   right: 0px;
 }
 .pointer > .top {
+  border: none;
   width: 100px;
   height: 100px;
   left: 100px;
@@ -69,6 +70,7 @@ img {
   transform: rotate(-90deg);
 }
 .pointer > .left {
+  border: none;
   width: 100px;
   height: 100px;
   left: 0px;
@@ -79,6 +81,7 @@ img {
   transform: rotate(-180deg);
 }
 .pointer > .right {
+  border: none;
   width: 100px;
   height: 100px;
   right: 0px;

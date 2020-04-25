@@ -58,6 +58,7 @@ img {
   top: 0px;
   right: 0px;
   > .top {
+    border: none;
     width: 100px;
     height: 100px;
     left: 100px;
@@ -67,6 +68,7 @@ img {
     transform: rotate(-90deg);
   }
   > .left {
+    border: none;
     width: 100px;
     height: 100px;
     left: 0px;
@@ -77,6 +79,7 @@ img {
     transform: rotate(-180deg);
   }
   > .right {
+    border: none;
     width: 100px;
     height: 100px;
     right: 0px;
